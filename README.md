@@ -1,4 +1,4 @@
-Code used for "No Causal Links Between Estradiol and Female’s Brain and Mental Health: A Mendelian Randomization Study"
+Code used for "No Causal Links Between Estradiol and Female’s Brain and Mental Health: A Mendelian Randomization Study" (preprint: https://osf.io/preprints/osf/ryq3g)
 
 GWAS.txt - code used in PLINK to run genome-wide association studies (GWAS) on estradiol levels and brain age gap
 
