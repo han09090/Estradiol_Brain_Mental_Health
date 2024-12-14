@@ -1,7 +1,7 @@
+# load packages
 library(dplyr)
 library(readr)
 library(MRlap)
-library(data.table)
 
 # load data
 childbirths <- read.table("path/childbirths.txt", header = TRUE, sep = "", dec = ".")
