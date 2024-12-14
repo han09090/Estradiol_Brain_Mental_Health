@@ -1,5 +1,4 @@
-###### MVMR with age at menarche & BMI (exposures) and MDD (Outcome)
-
+# load packages
 library(dplyr)
 library(TwoSampleMR)
 library(ggplot2)
