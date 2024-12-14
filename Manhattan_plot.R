@@ -1,4 +1,4 @@
-# Load libraries
+# Load packages
 library(qqman)
 library(tidyverse)
 
@@ -6,7 +6,7 @@ library(tidyverse)
 dat <- read.table("path/sumstats.txt",header=TRUE, sep = "", dec = ".")
 selectdat <- subset(dat,select=(c("SNP","CHR","BP","PVAL")))
 
-# Make the Manhattan plot
+## Manhattan plot
 # Parameters
 width <- 1600
 height <- 800
