@@ -1,4 +1,7 @@
-Code used for "No Causal Links Between Estradiol and Female’s Brain and Mental Health: A Mendelian Randomization Study" (preprint: https://osf.io/preprints/osf/ryq3g)
+Code used for
+
+**No Causal Links Between Estradiol and Female’s Brain and Mental Health: A Mendelian Randomization Study**
+Hannah Oppenheimer, Dennis van der Meer, Louise S. Schindler, Arielle Crestol, Lars T. Westlye, Ann-Marie G. de Lange, & Claudia Barth
 
 GWAS.txt - code used in PLINK to run genome-wide association studies (GWAS) on estradiol levels and brain age gap
 
@@ -10,4 +13,4 @@ MVMR_Analysis.R - code used for multivariable Mendelian randomization anlyses
 
 Manhattan_plot.R - code used to create Manhattan plots for GWAS
 
-Variables were adjusted according to the analyses described in the paper.
+Variables were adjusted according to the analyses described in the paper (preprint: https://osf.io/preprints/osf/ryq3g).
