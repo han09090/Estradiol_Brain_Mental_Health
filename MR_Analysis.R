@@ -3,8 +3,7 @@ library(dplyr)
 library(TwoSampleMR)
 library(ieugwasr)
 
-# load data
-data_file <- read.csv("path/mearche_depr.csv")
+# load data "menarche_depr.csv"
 # this data file has the rsid, beta, se, effect_allele, other_allele, p, eaf, and N
 # of the exposure and outcome for the instrumental variables
 
