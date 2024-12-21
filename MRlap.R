@@ -12,8 +12,8 @@ IVs <- read.table("path/IVs_BAG_childbirths", header = TRUE, sep = "", dec = "."
 # run MRlap using instrumental variables
 result <- MRlap(exposure=childbirths,exposure_name="childbirths",outcome=bag,
                 outcome_name="BAG",
-                ld = "/Users/hannah/Documents/MRlap/eur_w_ld_chr",
-                hm3 = "/Users/hannah/Documents/MRlap/w_hm3.noMHC.snplist",
+                ld = "path/eur_w_ld_chr",
+                hm3 = "path/w_hm3.noMHC.snplist",
                 do_pruning = F,
                 user_SNPsToKeep = IVs$SNPs)
 
