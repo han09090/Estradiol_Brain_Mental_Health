@@ -1,7 +1,6 @@
 # load packages
 library(dplyr)
 library(TwoSampleMR)
-library(ieugwasr)
 
 # load data "example_sumstats.csv"
 # this data file has the rsid, beta, se, effect_allele, other_allele, p, eaf, and N
