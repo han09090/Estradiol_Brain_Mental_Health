@@ -4,6 +4,8 @@ library(readr)
 library(MRlap)
 
 # load data
+# e.g., childbirths as the exposure and brain age gap (BAG) as the outcome
+# IVs are the instrumental variables used for the main MR analysis
 childbirths <- read.table("path/childbirths.txt", header = TRUE, sep = "", dec = ".")
 bag <- read.table("path/BAG.txt", header = TRUE, sep = "", dec = ".")
 IVs <- read.table("path/IVs_BAG_childbirths", header = TRUE, sep = "", dec = ".")
