@@ -15,14 +15,14 @@ outcome <- read_outcome_data(filename = "menarche_depr.csv", sep = ",", snp_col 
 
 
 # Read exposure data
-exposure <- read_outcome_data(filename = "menarche_depr.csv", sep = ",", snp_col = "rsid",
+exposure <- read_exposure_data(filename = "menarche_depr.csv", sep = ",", snp_col = "rsid",
                              beta_col = "beta_exp", se_col = "se_exp",
                              effect_allele = "effect_exp", other_allele = "other_exp",
                              pval_col="p_exp", samplesize_col = "N_exp")
 
 
 # Harmonize the data by aligning exposure and outcome data
-data <- harmonise_data(exposure_dat = exp_formatted, outcome_dat = outcome)
+data <- harmonise_data(exposure_dat = exposure, outcome_dat = outcome)
 
 
 # Calculate the number of rows in the harmonized dataset
@@ -47,8 +47,8 @@ library(ggplot2)
 plotcont <- mr_scatter_plot(result,data)[[1]] +
   theme_classic() +
   xlab("SNP effect on menarche") +
-  ylab("SNP effect on depr") +
-  ggtitle("Menarche (Exposure) & depr (Outcome)")
-ggsave("plot.jpeg",width=10.3,height=4.83)
+  ylab("SNP effect on depression") +
+  ggtitle("Menarche (Exposure) & Depression (Outcome)")
+plotcont
 
 
