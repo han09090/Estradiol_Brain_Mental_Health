@@ -3,19 +3,19 @@ library(dplyr)
 library(TwoSampleMR)
 library(ieugwasr)
 
-# load data "menarche_depr.csv"
+# load data "example_sumstats.csv"
 # this data file has the rsid, beta, se, effect_allele, other_allele, p, eaf, and N
 # of the exposure and outcome for the instrumental variables
 
 # Read outcome data
-outcome <- read_outcome_data(filename = "menarche_depr.csv", sep = ",", snp_col = "rsid",
+outcome <- read_outcome_data(filename = "example_sumstats.csv", sep = ",", snp_col = "rsid",
                              beta_col = "beta_out", se_col = "se_out",
                              effect_allele = "effect_out", other_allele = "other_out",
                              pval_col="p_out", samplesize_col = "N_out")
 
 
 # Read exposure data
-exposure <- read_exposure_data(filename = "menarche_depr.csv", sep = ",", snp_col = "rsid",
+exposure <- read_exposure_data(filename = "example_sumstats.csv", sep = ",", snp_col = "rsid",
                              beta_col = "beta_exp", se_col = "se_exp",
                              effect_allele = "effect_exp", other_allele = "other_exp",
                              pval_col="p_exp", samplesize_col = "N_exp")
