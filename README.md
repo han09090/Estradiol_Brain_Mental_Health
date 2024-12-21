@@ -13,4 +13,6 @@ MVMR_Analysis.R - code used for multivariable Mendelian randomization anlyses
 
 Manhattan_plot.R - code used to create Manhattan plots for GWAS
 
+example_sumstats.csv - example dataset to run MR_Analysis.R
+
 Variables were adjusted according to the analyses described in the paper (preprint: https://osf.io/preprints/osf/ryq3g).
