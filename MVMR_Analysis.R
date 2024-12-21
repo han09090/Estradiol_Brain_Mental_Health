@@ -6,16 +6,15 @@ library(remotes)
 install_github("WSpiller/MVMR", build_opts = c("--no-resave-data", "--no-manual"), build_vignettes = TRUE)
 
 
-# IVs of exposures extracted from IEU OpenGWAS
-id_exposure <- c("ebi-a-GCST90029036","ieu-a-974")
-exposure_dat <- mv_extract_exposures(id_exposure)
+# IVs of exposures (e.g. age at menarche and BMI) extracted from IEU OpenGWAS
+id_exposures <- c("ebi-a-GCST90029036","ieu-a-974")
+exposure_dat <- mv_extract_exposures(id_exposures)
 
-# Outcome data
-outcome_dat <- subset(deprBlok, SNP %in% c(exposure_dat$SNP))
+# Find IVs in outcome dataset (e.g. depression)
+outcome_dat <- subset(depr, SNP %in% c(exposure_dat$SNP))
 
-# combined dataset
-exposure_dat_combined <- subset(exposure_dat, SNP %in% c(outcome_dat$SNP))
-
+# datasets with only IVs found in exposure and outcome datasets
+exposure_dat <- subset(exposure_dat, SNP %in% c(outcome_dat$SNP))
 outcome_dat <- subset(outcome_dat,select=c("SNP","effect_allele.outcome",
                                            "other_allele.outcome","eaf.outcome",
                                            "beta.outcome","se.outcome","pval.outcome",
@@ -25,8 +24,8 @@ outcome_dat <- subset(outcome_dat,select=c("SNP","effect_allele.outcome",
 mvdat <- mv_harmonise_data(exposure_dat, outcome_dat)
 
 # MVMR Analysis
-res <- mv_multiple(mvdat,plots=F)
-print(res)
+result <- mv_multiple(mvdat,plots=F)
+print(result)
 
 
 # Compare with other approach (MV MR Egger)
