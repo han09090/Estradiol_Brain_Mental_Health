@@ -32,3 +32,5 @@ MendelianRandomization v0.9.0
 MVMR v0.1
 
 MRlap v0.0.3.2
+
+qqman v0.1.9
