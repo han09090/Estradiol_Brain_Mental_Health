@@ -17,6 +17,8 @@ example_sumstats.csv - example dataset to run MR_Analysis.R
 
 Variables were adjusted according to the analyses described in the paper (preprint: https://osf.io/preprints/osf/ryq3g).
 
+**System requirements:**
+
 The following versions were used:
 
 PLINK 2.0
@@ -34,3 +36,11 @@ MVMR v0.1
 MRlap v0.0.3.2
 
 qqman v0.1.9
+
+**Installation Guide:**
+
+R packages can be downloaded from CRAN or GitHub (fast installation, < 1 min)
+
+**Demo:**
+
+
