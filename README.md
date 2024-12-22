@@ -55,7 +55,11 @@ Expected run time < 2 mins
 
 All GWAS summary statistics used for the present study is publicly availble for download or can be requested from the respective authors.
 The summary statistics from the GWAS on brain age gap (female-specific and male-specific) and the female-specific GWAS on estradiol levels (continuous approach and binary approach) will be published on the NHGRI-EBI GWAS Catalog (study accessions: brain age gap in females: GCST90483374; brain age gap in males: GCST90483373; estradiol levels using the continuous approach: GCST90483375; estradiol levels using binary approach: GCST90483376). Data used for the GWAS are available from the UK Biobank.
+
 MR_Analysis.R was used for univariable analyses 
+
 MVMR_Analysis.R was used for multivariable analyses
+
 MRlap.R was used for univariable analyses with sample overlap
+
 GWAS.txt and Manhattan_plot.R was used for running and plotting GWAS
