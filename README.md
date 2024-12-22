@@ -44,9 +44,18 @@ R packages can be downloaded from CRAN or GitHub (fast installation, < 1 min per
 **Demo:**
 
 Run MR_Analysis.R using example_sumstats.csv as an input file for exposure and outcome variables (expected run time < 2 mins).
+
 Expected output for the MR analysis: 
 
 <img width="850" alt="Screenshot 2024-12-22 at 13 39 31" src="https://github.com/user-attachments/assets/8b5c2297-442a-4fc3-bd5d-aae9aa4a5a35" />
+
+Expected output for heterogeneity test:
+
+<img width="850" alt="Screenshot 2024-12-22 at 13 39 31" src="https://github.com/user-attachments/assets/bd7f42f5-4c8a-41cd-8105-7ad40663869b" />
+
+Expected plot:
+
+<img width="1056" alt="Screenshot 2024-12-22 at 13 43 47" src="https://github.com/user-attachments/assets/0bb78195-f795-41e1-853b-77244d3050dd" />
 
 **Instructions for use:**
 
