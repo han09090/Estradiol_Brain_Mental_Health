@@ -46,10 +46,10 @@ mr_report(data)
 
 # plot
 library(ggplot2)
-plotcont <- mr_scatter_plot(result,data)[[1]] +
+plot <- mr_scatter_plot(result,data)[[1]] +
   theme_classic() +
   xlab("SNP effect on exposure") +
   ylab("SNP effect on outcome")
-plotcont
+plot
 
 
