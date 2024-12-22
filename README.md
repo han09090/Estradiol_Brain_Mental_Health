@@ -63,3 +63,5 @@ MVMR_Analysis.R was used for multivariable analyses
 MRlap.R was used for univariable analyses with sample overlap
 
 GWAS.txt and Manhattan_plot.R was used for running and plotting GWAS
+
+All results in the present study can be reproduced using the data and analyses as described in the manuscript.
