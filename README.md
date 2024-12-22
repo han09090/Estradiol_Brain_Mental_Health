@@ -39,8 +39,23 @@ qqman v0.1.9
 
 **Installation Guide:**
 
-R packages can be downloaded from CRAN or GitHub (fast installation, < 1 min)
+R packages can be downloaded from CRAN or GitHub (fast installation, < 1 min per package)
 
 **Demo:**
 
+Run MR_Analysis.R using example_sumstats.csv as an input file for exposure and outcome variables.
+Expected output for inverse-variance weighted (IVW) method: 
+nsnp = 26
+b = -0.10768788
+se = 0.09844594
+pval = 0.2740083
+Expected run time < 2 mins
 
+**Instructions for use:**
+
+All GWAS summary statistics used for the present study is publicly availble for download or can be requested from the respective authors.
+The summary statistics from the GWAS on brain age gap (female-specific and male-specific) and the female-specific GWAS on estradiol levels (continuous approach and binary approach) will be published on the NHGRI-EBI GWAS Catalog (study accessions: brain age gap in females: GCST90483374; brain age gap in males: GCST90483373; estradiol levels using the continuous approach: GCST90483375; estradiol levels using binary approach: GCST90483376). Data used for the GWAS are available from the UK Biobank.
+MR_Analysis.R was used for univariable analyses 
+MVMR_Analysis.R was used for multivariable analyses
+MRlap.R was used for univariable analyses with sample overlap
+GWAS.txt and Manhattan_plot.R was used for running and plotting GWAS
