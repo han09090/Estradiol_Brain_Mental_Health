@@ -5,6 +5,9 @@ library(TwoSampleMR)
 # load data "example_sumstats.csv"
 # this data file has the rsid, beta, se, effect_allele, other_allele, p, eaf, and N
 # of the exposure and outcome for the instrumental variables
+# if instrumental variables need to be identified:
+# IVs <- subset(exposure_sumstats, pval < 0.00000005) # find SNPs with p < 5 x 10^-8
+# IVs <- ld_clump(IVs) # clump the SNPs
 
 # Read outcome data
 outcome <- read_outcome_data(filename = "example_sumstats.csv", sep = ",", snp_col = "rsid",
