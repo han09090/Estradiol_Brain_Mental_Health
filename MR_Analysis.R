@@ -45,9 +45,8 @@ mr_report(data)
 library(ggplot2)
 plotcont <- mr_scatter_plot(result,data)[[1]] +
   theme_classic() +
-  xlab("SNP effect on menarche") +
-  ylab("SNP effect on depression") +
-  ggtitle("Menarche (Exposure) & Depression (Outcome)")
+  xlab("SNP effect on exposure") +
+  ylab("SNP effect on outcome")
 plotcont
 
 
